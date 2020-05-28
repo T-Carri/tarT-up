@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, user-scalable=no,inicial-scale=1.0,maxium-scale=1.0, minium-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon"href="color-amarillo.png" />
+    <meta name="Autor:" content="Play carri software by Bryan Carrillo" />
+    <meta name="Tarup" content="Mejor forma de organizar tus tareas escolares" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="stylesheet" type="text/css"  href="i_0_w.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Patua+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- media="screen and (max-device-width:480px) and (resolution:163dpi)"
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Tarup</title>
+ 
+  </head>
+  <body class="BwtoT4a3R2u1P">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+
+<div id=i_0_w class="clearfix">
+  
+  <header>
+  
+  <h1>Tarup</h1>
+    <button  type="button" class="btn btn-success" onclick="auth.js" style="margin-top: -49px;margin-left: 12px;margin-right: 53px;">iniciar sesión</button>
+  <img src="mainlogo.png"  style= "width:76px; height:52px;margin-top: -93px;margin-left: 13px;";>
+  </header>  
+  
+  <aside> 
+    <div id="ehm"><h2>El motor de tarup es el tiempo y las fechas, ¡las tareas jamás serán olvidadas!</h2>
+      <button  type="button" class="btn btn-secondary" onclick="enseña()">Empieza hoy mismo</button></div> 
+ 
+ 
+ 
+      <!-- <div class="start1" id="menu_i">
+    <button  type="button" class="btn btn-secondary" onclick="">¿Qué es tarup?</button>
+    <button  type="button" class="btn btn-secondary" onclick="">Mision</button> 
+    <button  type="button" class="btn btn-secondary" onclick="">Vision</button>
+  </div>-->
+     
+  <script> 
+  
+   function enseña(){
+     
+    const cambia= document.getElementById("ehm");
+    cambia.classList.toggle('menuinfo');
+    let html=`<div class="informacion">
+    <button  type="button" class="btn btn-secondary" onclick="whatisTarup()">¿Qué es tarup?</button>
+    <button  type="button" class="btn btn-danger" onclick="mision()">Misión</button> 
+    <button  type="button" class="btn btn-warning" onclick="vision()">Visión</button>
+  </div>`;
+    muestraresultado(html);
+    
+  }
+  const muestraresultado=(botones)=>document.getElementById('ehm').innerHTML=botones;
+
+ function whatisTarup(){const showmewhaTis=document.getElementById("ehm");
+showmewhaTis.classList.toggle('menuinfoT');
+  let T=`<div class="informacionT"><h5>Tarup es una herramienta que te ayuda a organizar tus tareas y llevar un control sobre tus materias. </h5><br><h5>Tambien te notifica tu estado de riesgo, pendientes y rubricas.<h5/>
+<br><h5>Su utilidad es similar a un lapiz, incluyenos en tu lista de útiles.</h5>
+    <button  type="button" class="btn btn-danger" onclick="enseña()">Tarup</button> 
+    <button  type="button" class="btn btn-primary" onclick="">Registrate</button> </div>`;          
+  muestra(T);
+                                              }
+ 
+ const muestra=(tarupInfo)=>document.getElementById('ehm').innerHTML=tarupInfo;
+ 
+ 
+ 
+ 
+ 
+ 
+  function mision(){const mision=document.getElementById('ehm');
+mision.classList. toggle('menuinfoT');
+let A=`<div>  <b><h5>Misión</h5></b>
+  <h5>Una app dedicada a la sincronización de tareas de cada materia dirigida a los alumnos de cualquier nivel. Te ayuda a capturar,
+agendar y organizar tus proyectos o tareas los cuales podrás ver en la nube y compartir a tus compañeros,
+también podrás ver estadísticas de materias donde hay debilidades.</h5> <h5>Tarup tiene como mision mejorar la productividad académica.</h5>
+  <button  type="button" class="btn btn-danger" onclick="enseña()">Back</button> </div>`;
+       objetivos(A) }
+       const objetivos=(star)=>document.getElementById('ehm').innerHTML=star;
+
+
+       function vision(){const vision=document.getElementById('ehm');
+vision.classList. toggle('menuinfoT');
+let R =`<div>  <b><h5>Vision</h5></b>
+  <h5>Este metodo de trabajo esta diseñado con la intención de mejorar las notas escolares.</h5> 
+  <h5>Lo cual unicamente es posible con disciplina, pero tarup lo vuelve más fácil organizando tu materias mejorando tu productividad tambien contemplamos a los distraidos...</h5>
+  <button  type="button" class="btn btn-danger" onclick="enseña()">Back</button> </div>`;
+       muestraVision(R)}
+       const muestraVision=(beNice)=>document.getElementById('ehm').innerHTML=beNice;
+  </script>
+
+  </aside>
+  
+  
+  
+  <section id="imagwel">
+   <img id=new src="2.jpg";>
+  <p id=efem><br> <b>Efemeride del dia:</b> 24 de mayo pero del año 1844  Tras la construccion de la primera linea telegrafica, el inventor Samuel Morse emite el primer mensaje telegrafico entre dos ciudades que envia desde el Capitolio de Washington a la ciudad de Baltimore a unos 60km. (hace 176 años)</p>
+  </section>
+    <article></article>
+  </section>
+  </div>
+<footer>
+
+ 
+  <h5>Tarup, servicio dedicado a alumnos de cualquier nivel.</h5>
+  <h6> Nicolas romero, México, México</h6>
+  <h6>Proximamente</h6>
+  
+  <h6>www.Tarup.com</h6>
+</footer>
+
+
+
+
+
+
+    
+  </body>
+</html>
