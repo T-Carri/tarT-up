@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, user-scalable=no,inicial-scale=1.0,maxium-scale=1.0, minium-scale=1.0"/>
+    <link rel="shortcut icon" type="image/x-icon"href="color-amarillo.png" />
+    <meta name="Autor:" content="Play carri software by Bryan Carrillo" />
+    <meta name="Tarup" content="Mejor forma de organizar tus tareas escolares" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <script src="condicionesCamposCursos.js"></script>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="stylesheet" type="text/css"  href="i_1_c.css">
+	<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Patua+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!-- media="screen and (max-device-width:480px) and (resolution:163dpi)"
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Tarup</title>
+ 
+</head>
+  <body class="1nth3Castl3">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+<header> 
+      <nav class="navbar navbar-dark py-0 bg-red navbar-expand-lg py-md-0" style="background-color: #800e19; height: 58px;">
+        <img class="navbar-brand" src="castle1.png" href="#" style="margin-left:111px; width: 67px; height: 61px;"></>
+        <button class="navbar-toggler mt-1" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNav">
+            <ul class="navbar-nav">
+               
+            </ul>
+        </div>
+   
+   
+        <button type="radio" onclick=location.href="index.html"  class="btn btn-secondary btn-lg" style="font-family: 'Balsamiq Sans', cursive; margin-top: -15px;margin-left: 755px;margin-right: 152px;">cerrar sesion</button>   </nav>
+    <div class="container-fluid py-3">
+        <div class="row">
+          
+            <div class="col"></div>
+        </div>
+    </div>
+  
+         
+
+</header> 
+     <div id="app">
+  <aside id="control" style="margin-left: 682px;margin-right: 47px;">
+       <div id="perfil" style="margin-left: -35px; margin-right: 71px;"> <button type="radio" onclick="muestraPerfil()"  class="btn btn-secondary btn-lg" style="background-color:  #abb2b9 ;font-family: 'Balsamiq Sans', cursive; margin-left:-2px; ;">Mi perfil</button>
+        <script>
+          function muestraPerfil(){
+            const perfil=document.getElementById('perfil');
+            perfil. classList.toggle('perfil');
+            let user=``;
+            showPerfil(user);
+            oculta();
+          }
+         const showPerfil=(cliente)=>document.getElementById('control').innerHTML=cliente;
+        function oculta(){ let x=document.getElementById('perfil');
+        if(x.style.display==='none'){x.style.display='block';} else {x.style.display='none;'}
+
+        }
+        </script></div>
+        <button type="radio" class="btn btn-success btn-lg" style="margin-left: -37px; margin-top: 6px; width:233px ; height:49px ; background-color:  #abb2b9; font-family: 'Balsamiq Sans', cursive; color:#1d1414;">Mis grupos</button>
+
+     <div id="morado" style="margin-top: -103px; margin-left:197px;"> </div>
+
+       <button type="image" src="engran2.png" class="btn btn-danger btn-lg" style="width: 68px; height:68px;margin-left: 197px;margin-top: -1px; background-color: #e71d1d;"></button>
+       <img src="engran2.png" style="width: 58px; height: 58px;margin-left: 203px;margin-top: -97px;"/>
+  </aside>
+
+     <div id="TAU1"> 
+        <h5 style="margin-top:24px; margin-left:154px; font-size: 1.80rem;;">¡Bienvenido a Tarup!</h5>
+        <button id="x" type="button" onClick="iniciarCurso()" class="btn btn-success" style="margin-left: 225px;margin-top: 63px; height: 55px ; width:148px ;padding-top: 0.1rem;">Iniciar curso</button>
+      
+      
+      
+      <script>
+      function iniciarCurso(){
+        const curso=document.getElementById('TAU1');
+      curso.classList.toggle('TAC2'); 
+      let CURSO=`<div  class="TAC2" id="TAC2"><h5 style="margin-top:24px; margin-left:153px; font-size: 1.5rem;;">Selecciona el tipo de curso</h5>
+        <button id="x" onClick="registraBimestre()"; type="button" class="btn btn-success" style="margin-left: 225px;margin-top: 63px; height: 55px ; width:148px ;padding-top: 0.1rem;">Bimestre</button>
+        <button id="x" onClick="registraQuatrimestre()"; type="button" class="btn btn-success" style="margin-left: 225px;margin-top: 63px; height: 55px ; width:148px ;padding-top: 0.1rem;">Quatrimestre</button>
+        <button id="x" onClick="registraSemestre()"; type="button" class="btn btn-success" style="margin-left: 225px;margin-top: 63px; height: 55px ; width:148px ;padding-top: 0.1rem;">Semestre</button>
+        <button id="x" onClick="registraDiasdecurso()"; type="button" class="btn btn-success" style="margin-left: 225px;margin-top: 63px; height: 55px ; width:148px ; padding-top: 0.1rem;">Dias de curso</button>`;
+      verCursos(CURSO)
+      }
+      const verCursos=(ok)=>document.getElementById('TAU1').innerHTML=ok;
+    
+        function registraBimestre() {
+     const cambiatoB= document.getElementById('TAU1');
+     cambiatoB.classList.toggle('bimestre');
+    
+  let B =`  <div id="formulario1"> 
+      
+      <div id="bimestre"><h5 style="margin-top:0px; margin-left:58px; font-size: 1.5rem;;">Bimestre</h5>
+      <form action="bimestre.php" method="POST" style="margin-left: 201px;margin-top: 6px;">
+          <ul><p>Carrera</p>
+              <input name="carrera" id="carrera" type="text"></input>
+              <p>Escuela</p>
+              <input name="escuela" id=" escuela" type="text"></input>
+              <p>Grupo</p>
+              <input name="grupo" id="grupo" type="text"></input>
+              <p>Grado</p><input name="grado"  id="grado" type="text">
+          <br><input type="submit" class="btn btn-success" style="width: 150px;height: 60px; margin-top: 22px;">Crear curso</input><submit type="button" onCLick="" class="btn btn-danger" style="margin-left: -328px;margin-top: 48px;">regresar</submit></input></ul> </form>
+              
+      </div>
+
+    </div>`;
+    muestraFB(B);
+} 
+const muestraFB=(clienteB)=>document.getElementById('TAU1').innerHTML=clienteB;
+
+function registraSemestre() {
+     const cambiatoS= document.getElementById('TAU1');
+     cambiatoS.classList.toggle('semestre');
+
+   let S =`  <div id="formulario1"> 
+      
+      <div id=""><h5 style="margin-top:0px; margin-left:58px; font-size: 1.5rem;;">Semestre</h5>
+      <form action="" style="margin-left: 201px;margin-top: 6px;">
+          <ul><p>Carrera</p>
+              <input name="carrera" type="text"></input>
+              <p>Escuela</p>
+              <input name="escuela" type="text"></input>
+              <p>Grupo</p>
+              <input name="grupo" type="text"></input>
+              <p>Grado</p><input name="grado" type="text">
+              
+          <br><submit type="button" class="btn btn-success" style="width: 150px;height: 60px; margin-top: 22px;">Crear curso</submit><submit type="button" onCLick="" class="btn btn-danger" style="margin-left: -328px;margin-top: 48px;">regresar</submit></input></ul> </form>
+              
+      </div>
+
+    </div>`;
+    muestraFS(S);
+}
+const muestraFS=(clienteS)=>document.getElementById('TAU1').innerHTML=clienteS;
+
+
+function registraQuatrimestre() {
+     const cambiatoQ= document.getElementById('TAU1');
+     cambiatoQ.classList.toggle('quatrimestre');
+
+   let Q  =`  <div id="formulario1"> 
+      
+      <div id=""><h5 style="margin-top:0px; margin-left:58px; font-size: 1.5rem;;">Quatrimestre</h5>
+      <form action="" style="margin-left: 201px;margin-top: 6px;">
+          <ul><p>Carrera</p>
+              <input type="text"></input>
+              <p>Escuela</p>
+              <input type="text"></input>
+              <p>Grupo</p>
+              <input type="text"></input>
+              <p>Grado</p>
+              <input type="text"></input>
+          <br><submit type="button" class="btn btn-success" style="width: 150px;height: 60px; margin-top: 22px;">Crear curso</submit><submit type="button" onCLick="iniciarCurso()" class="btn btn-danger"style="margin-left: -328px;margin-top: 48px;">regresar</submit></input></ul> </form>
+              
+      </div>
+
+    </div>`;
+    muestraFQ(Q);
+}
+const muestraFQ=(clienteQ)=>document.getElementById('TAU1').innerHTML=clienteQ;
+
+function registraDiasdecurso() {
+     const cambiatoD= document.getElementById('TAU1');
+     cambiatoD.classList.toggle('diasdecurso');
+
+let D=`  <div class="formulario1" id="formulario1"> 
+      
+      <div id=""><h5 style="margin-top:0px; margin-left:58px; font-size: 1.5rem;;">Dias de curso</h5>
+      <form action="" style="margin-left: 201px;margin-top: 6px;">
+          <ul><p>Curso</p>
+              <input type="text"></input>
+              <p>Dias de curso</p>
+              <input type="text"></input>
+              <p>Escuela </p>
+              <input type="text"></input>
+              <p>Grupo (opcional)</p><input type="text">
+              
+          <br><submit type="button" class="btn btn-success" style="width: 150px;height: 60px; margin-top: 22px;">Crear curso</submit> <submit type="button" onClick="iniciarCurso()" class="btn btn-danger" style="margin-left: -328px;margin-top: 48px;">regresar</submit></input></ul> </form>
+              
+      </div>
+
+    </div>`;
+    muestraFD(D);
+}
+const muestraFD=(clienteD)=>document.getElementById('TAU1').innerHTML=clienteD;
+
+
+function regresa(){
+  const eligeCurso=document.getElementById('formualrio1');
+  eligeCurso.getElementById('TAC2').toggle('TAC2');
+}
+      </script>  
+               </div>
+      </div>
+  </div> 
+  
+ 
+    
+  </body>
+</html>

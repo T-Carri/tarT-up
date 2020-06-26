@@ -1,0 +1,114 @@
+*{
+    margin 0px;
+    padding 0px;
+    
+}
+body{margin 0px;
+    color: #000102;
+}
+div#app{
+    width:1081px;
+    margin:0px auto;
+	height:795px;
+    margin-top: 8px;
+    
+    padding-top: 10px;
+    padding-right: 50px;
+    background-color: rgb(233, 227, 227);
+}
+aside#control{
+height: 500px;
+width: 300px;
+margin-top: 30px;
+    margin-left: 716px;
+    margin-right: 650px;
+    background-color: rgb(233, 227, 227);
+    padding-left: 31px;
+
+
+}
+div#morado{
+    height: 300px;
+width: 100px;
+margin-top: -253px;
+    margin-left: 197px;
+    margin-right: 50px;
+    background: #6a3093;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom,#6a3093, #a044ff);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom,#6a3093, #a044ff ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    display: inline-flex;
+    
+}
+button.btn.btn-secondary.btn-lg{
+     
+    margin-left: -37px;
+    color:#1d1414;
+    width: 233px;
+    height: 49px;
+
+}
+.bg-warning{
+    background-color: #d2963a;
+}
+header{
+    height: 50px;
+    margin-top: -8px;
+margin-left: -8px;
+margin-right: -8px;
+}
+div#TAU1{
+    height: 700px;
+    width: 625px;
+    background-color: rgb(165, 158, 155);
+    margin-top: -511px;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+button#x.btn.btn.success{
+    margin-left: 5px;
+    margin-top: 30px;
+    width: ;
+    height: ;
+
+}
+h5{
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 2.25em;
+}
+.bimestre{  height: 700px;
+    width: 625px;
+    background-color: rgb(165, 158, 155);
+    margin-top: -511px;
+    margin-left: 20px;
+    padding-top: 20px;}
+.semestre{  height: 700px;
+    width: 625px;
+    background-color: rgb(165, 158, 155);
+    margin-top: -511px;
+    margin-left: 20px;
+    padding-top: 20px;}
+.quatrimestre{  height: 700px;
+    width: 625px;
+    background-color: rgb(165, 158, 155);
+    margin-top: -511px;
+    margin-left: 20px;
+    padding-top: 20px;}
+.diasdecurso{  height: 700px;
+    width: 625px;
+    background-color: rgb(214, 206, 202);
+    margin-top: -511px;
+    margin-left: 20px;
+    padding-top: 20px;}
+    p{
+        
+    }
+
+    div#perfil{
+        width: 30px;
+        height: 30px;
+        background-color: red;
+    }
